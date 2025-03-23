@@ -1,0 +1,147 @@
+/* Reset and Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Common Layout Classes */
+.container-width {
+    width: 100%;
+    max-width: 320px;
+}
+
+/* Logo Area */
+.logo-area {
+    width: 100%;
+    max-width: 320px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    color: #999;
+    font-size: 14px;
+}
+
+.logo-area img {
+    width: 100%;
+}
+
+/* Typography */
+.mini-title {
+    text-align: center;
+    font-size: 17px !important;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+    padding: 0;
+    color: #333;
+    text-transform: uppercase;
+    font-family: 'Klop', sans-serif;
+}
+
+.listing {
+    font-size: 18px;
+    margin-bottom: 21px;
+}
+
+/* Form Elements Base Styles */
+.input-group {
+    margin-bottom: 25px;
+    text-align: left;
+    width: 100%;
+    max-width: 320px;
+}
+
+.input-label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    padding-left: 3px;
+}
+
+/* Common Form Control Styles */
+.form-control,
+#colorSelect, 
+#fontSelect, 
+#textInput,
+#textInputRow1,
+#textInputRow2 {
+    width: 100%;
+    max-width: 320px;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 0.375rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.form-control:focus,
+#colorSelect:focus, 
+#fontSelect:focus, 
+#textInput:focus,
+#textInputRow1:focus,
+#textInputRow2:focus {
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(13,110,253,.25);
+}
+
+/* Select Controls */
+#colorSelect,
+#fontSelect,
+.form-select {
+    padding-right: 2.25rem;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 16px 12px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+}
+
+#colorSelect:hover,
+#fontSelect:hover,
+.form-select:hover {
+    border-color: #ced4da;
+}
+
+/* Utility Classes */
+.text-center {
+    text-align: center;
+}
+
+/* Media Queries */
+@media screen and (max-width: 320px) {
+    body {
+        padding: 15px;
+    }
+}
+
+@media (min-width: 481px) {
+    body {
+        padding: 30px;
+    }
+    
+    .input-group,
+    .preview-group,
+    .form-control {
+        max-width: 400px;
+    }
+} 
